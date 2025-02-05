@@ -114,6 +114,14 @@ h4{
 }
 
 .tarjeta{
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.tarjeta{
     width: 100%;
     border-radius: 9px;
     overflow: hidden;
@@ -126,14 +134,6 @@ h4{
 .img-card{
     width: 150px;
     max-height: 350px;
-}
-
-.tarjeta{
-    max-width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 }
 
 .cover-dos{
@@ -277,7 +277,7 @@ footer{
 
 @media screen and (min-width: 1024px){
 
-    main{
+    .main-inicio{
         height: 85vh;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -329,16 +329,32 @@ footer{
         display: none;
     }
 
-    .container-inicio{
-        border: 2px solid black;
-    }
-
     .img-inicio{
         display: none;
     }
 
     .carrusel{
         height: 16rem;
+    }
+
+    h1{
+        margin: 3rem;
+    }
+
+    main .container{
+        display: flex;
+        width: 50vw;
+    }
+
+    .tarjeta{
+        display: flex;
+        flex-direction: column;
+        height: 25rem;
+    }
+
+    .pronto{
+        display: flex;
+        flex-direction: column;
     }
 
     footer{
