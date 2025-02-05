@@ -1,122 +1,196 @@
+/* reset */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* estilos generales */
+
+body{
+    background-color: rgb(204, 201, 201);
+}
+
+/* estilos para mobile */
 header{
-    font-size: 25px;
+    font-size: 1.5rem;
+    margin-bottom: 98px;
 }
 
 header .bg-color{
-    background-color: rgb(182, 167, 167);
+    background-color: rgb(58, 58, 58);
 }
 
 header .logo{
-    width: 10%;
+    width: 60%;
 }
 
-p{
-    font-size: 20px;
+.animacion-logo{
+    opacity: 0;
+    animation: my-animation 4s infinite;
+}
+@keyframes my-animation {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
-body{
-    background-color: rgb(188, 179, 179);
+header .header{
+    height: 50%;
 }
 
-main h1{
-    text-align: center;
-    margin: 5%;
-    text-decoration: underline;
-    color: rgb(53, 50, 73);
+.carrusel{
+    height: 5rem;
 }
 
-main .text-page{
-    padding-left: 20px;
-}
-
-.box-ip{
-    border: 1px solid black;
-    margin-left: 10px;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    background: rgb(182, 167, 167);
-}
-
-main section div{
+.cover-uno{
+    height: 400px;
     display: flex;
-    padding-right: 20px;
+    justify-content: center;
     align-items: center;
-    margin-right: 10px;
-}
-
-main span{
-    font-size: 25px;
-    font-weight: bold;
-    display: block;
-    text-align: center;
-}
-
-main span button{
-    background-color: #2b2b2b;
-    margin-top: 30px;
-    padding: 5px;
+    flex-direction: column;
+    background-image: url(../img/tienda.png);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
     color: whitesmoke;
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    box-shadow: 10px 15px 30px rgb(0, 0, 0);
 }
 
-.text-phone{
-    font-size: 15px;
+/* estilos de main */
+
+h1{
+    text-align: center;
+    margin: 1.5rem;
+    text-decoration: underline;
+}
+
+.bienvenido{
+    text-align: center;
+    margin: 1rem;
+}
+
+.img-inicio{
+    width: 70%;
+    max-height: 300px;
+    object-fit: cover;
+    margin: 0 20px 80px 0;
+}
+
+.btn-mas{
+    border-radius: 5px;
+    background-image: -webkit-linear-gradient(top, #6d6565, #2c2a2a);
+    color: whitesmoke;
+    padding: 5px;
+}
+
+.ult-img{
+    margin-bottom: 3rem;
+}
+
+.container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta{
+    width: 100%;
+    border-radius: 9px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.2);
+    height: 190px;
+    margin: 20px 0px 20px 0;
+}
+
+.img-card{
+    width: 150px;
+    max-height: 350px;
+}
+
+.tarjeta{
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
-.serv-tec{
-    margin-right: 20%;
+.cover-dos{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/reparacion-uno.png);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    color: whitesmoke;
 }
 
-input{
-    margin-right: 5%;
+.contenedor{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.img-rep{
+    margin: 1rem 0.5rem;
+    width: 15rem;
+    object-fit: cover;
 }
 
 .reporte{
+    display: grid;
+}
+
+.boton-enviar{
+    margin-bottom: 5rem;
+}
+
+.contact{
+    margin: 2rem 0 0 0;
+}
+
+.contact-uno{
     display: flex;
     align-items: center;
 }
-.boton-enviar{
-    margin-bottom: 4%;
+
+.about-us{
+    width: 100%;
+    margin-bottom: 2rem;
 }
+
 
 footer{
-    text-align: center;
-    background-color: rgb(182, 167, 167);
+    left: 0;
+    bottom: 0;
     width: 100%;
-    padding: 10px;
+    height: 4rem;
+    text-align: center;
+    background-color: rgb(58, 58, 58);
+    padding-top: 1rem;
+    margin-top: 2rem;
+    color: whitesmoke;
 }
 
-@media screen and (max-width: 600px){
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
 
-    header{
-        width: 100%;
-    }
+/* estilos para tablet */
 
-    header .logo{
-        width: 35%;
+@media screen and (min-width: 600px){
+    .cover{
+        margin-top: 6.3rem;
     }
-
-    main section .box-ip{
-        display: grid;
+    main{
+        grid-template-columns:repeat(2, 1fr) ;
+        grid-template-rows: repeat(2, 40%);
+        column-gap: 1rem;
     }
-
-    main section .box-rs{
-        display: grid;
+    main .pro{
+        grid-column: span 2;
     }
 }

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>mobileUp | Servicio Técnico</title>
+        <title>cellUp | Servicio Virtual</title>
 
     <!-- link del bootstrap -->
 
@@ -12,7 +12,7 @@
     <!-- link del css -->
         
     <link rel="stylesheet" href="../css/main.css">
-
+    
     </head>
     <body>
         <!-- banner principal -->
@@ -37,10 +37,10 @@
                                     <a class="nav-link" aria-current="page" href="productos.html">Productos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="nosotros.html">Sobre Nosotros</a>
+                                    <a class="nav-link active" href="nosotros.html">Sobre Nosotros</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="servicio-tecnico.html">Servicio Técnico</a>
+                                    <a class="nav-link" href="servicio-tecnico.html">Servicio Técnico</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="contacto.html">Contacto</a>
@@ -54,26 +54,24 @@
 
         <!-- contenido principal -->
         <main>
-            <div class="cover-dos">
-                <h1>¿Qué reparamos?</h1>
+            <h1 class="titulo-about-us">INNOVATEC</h1>
+            <div>
+                <img class="about-us" src="../img/about-us.png" alt="imagen sobre nosotros">
             </div>
+            <h3>¿Quienes somos?</h3>
+            <p> 
+                En nuestra tienda, nos apasiona ofrecer lo mejor de la tecnología de Apple a nuestros clientes. Fundada en 2025, nuestra misión es conectar a las personas con los dispositivos más innovadores del mercado, específicamente con la gama de iPhones, que han revolucionado la manera en que nos comunicamos, trabajamos y nos entretenemos. Nos especializamos en la venta de iPhones nuevos y reacondicionados, siempre garantizando productos de calidad con el respaldo que nuestros clientes merecen.
 
-            <div class="contenedor">
-                <div>
-                    <img class="img-rep" src="../img/reparacion-dos.png" alt="reparacion de macbook">
-                </div>
-                <div>
-                    <p>Contamos con servicio certificado en la reparación de MacBook</p>
-                </div>
-            </div>
-            <div class="contenedor">
-                <div>
-                    <img class="img-rep" src="../img/reparacion-tres.png" alt="reparacion de iphone">
-                </div>
-                <div>
-                    <p>Contamos con servicio certificado en la reparación de MacBook</p>
-                </div>
-            </div>
+                En nuestra tienda, entendemos que cada persona tiene necesidades únicas, por lo que nos comprometemos a brindar un servicio personalizado, asesorando a cada cliente sobre el modelo y características que mejor se adapten a sus gustos y requisitos. Además, nos enorgullece ofrecer precios competitivos, opciones de financiamiento y una experiencia de compra sin igual, tanto en nuestra tienda física como en nuestra plataforma en línea.
+                    
+                Lo que nos distingue es nuestra pasión por la tecnología y el compromiso con la satisfacción total de nuestros clientes. Ya sea que busques el último modelo de iPhone o un dispositivo reacondicionado de alta calidad, estamos aquí para proporcionarte lo mejor de la tecnología de Apple con un servicio confiable y cercano. ¡Te invitamos a ser parte de nuestra familia y descubrir por qué somos tu tienda de confianza para todo lo relacionado con iPhones!
+            </p>
+
+            <form action="submit">
+                <label for="correo electronico">Correo eléctronico: </label>
+                <input type="email">
+                <button class="btn btn-primary btn-lg">Enviar</button>
+            </form>
         </main>
 
         <!-- pie de pagina -->
@@ -82,6 +80,7 @@
         </footer>
 
         <!-- link del js -->
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>

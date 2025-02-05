@@ -11,74 +11,83 @@
 
         <!-- link del css -->
 
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
 
         <!-- banner principal -->
-        <header>
-            <nav class="navbar navbar-expand-lg bg-color">
-                <img src="img/logo.png" alt="logo" class="logo">
-                <div class="container-fluid barra-nav">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+        <header class="header">
+            <nav class="navbar bg-color fixed-top" data-bs-theme="dark">
+                <div class="container-fluid bg-color ">
+                    <a class="navbar-brand" href="index.html"><img class="logo animacion-logo" src="img/logo.png" alt="logo de innovatec"></a>
+                    <button class="navbar-toggler position-absolute top-25 end-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/celulares.html">Celulares</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/auriculares.html">Auriculares</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Servicios
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="pages/servicio-tecnico.html">Servicio técnico</a></li>
-                                    <li><a class="dropdown-item" href="pages/soporte-virtual.html">Servicio virtual</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled opacity-50" aria-disabled="true">Proximamente Cyber Monday!</a>
-                            </li>
-                        </ul>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header bg-color">
+                            <h5 class="offcanvas-title logo" id="offcanvasNavbarLabel"><img src="img/logo.png" alt="logo de innovatec"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body bg-color">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="pages/productos.html">Productos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/nosotros.html">Sobre Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/servicio-tecnico.html">Servicio Técnico</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
         </header>
-        
-        <!-- contenido principal -->
-        <main>
-            <h1>¡Nuevo lanzamiento!</h1>
-            <p class="text-page">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum totam error quam sequi, ipsam repudiandae recusandae quis accusamus fugit similique hic iusto, neque, deleniti omnis pariatur doloribus non nisi explicabo?</p>
 
-            <section>
-                    <div class="container box-rs">
-                        <div class="box-ip">
-                            <img src="img/iphone-16.png" alt="iPhone 16" >
-                            <p class="text-phone"> <span>Iphone 16</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span><button>comprar</button></span></p>
-                        </div>
-                        <div class="box-ip">
-                            <img src="img/iphone-16plus.png" alt="iPhone 16 plus">
-                            <p class="text-phone"> <span>Iphone 16 plus </span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span><button>comprar</button></span></p>
-                        </div>
-                    </div>    
-                    <div class="container box-rs">
-                        <div class="box-ip">
-                            <img src="img/iphone-16pro.png" alt="iPhone 16 pro">
-                            <p class="text-phone"> <span>Iphone 16 pro</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span><button>comprar</button></span></p>
-                        </div>
-                        <div class="box-ip">
-                            <img src="img/iphone-16promax.png" alt="iPhone 16 pro max">
-                            <p class="text-phone"> <span>Iphone 16 pro max</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span><button>comprar</button></span></p>
-                        </div>    
-                    </div>
-            </section>
+        <div class="cover-uno">
+            <h1>INNOVATEC</h1>
+            <p class="text-page">Los mejores precios del pais</p>
+            <a href="pages/productos.html">
+                <button class="ver-mas btn btn-primary"">
+                    Ver Productos
+                </button>
+            </a>
+        </div>
+        <h2 class="bienvenido">¡Bienvenidos a nuestro sitio web!</h2>
+
+        <!-- contenido principal -->
+        <main class="main-inicio ">
+            
+            <div>
+                <h4>Servicio Técnico</h4>
+                <a href="pages/servicio-tecnico.html">
+                    <img class="img-inicio" src="img/reparacion-uno.png" alt="servicio tecnico para iphone">
+                    <button class="btn-mas">Ver Más</button>
+                </a>
+            </div>
+            <div>
+                <h4>Contáctanos</h4>
+                <a href="pages/contacto.html">
+                    <img class="img-inicio" src="img/contacto.png" alt="contacto">
+                    <button class="btn-mas">Ver Más</button>
+                </a>
+            </div>
+            <div>
+                <h4>Nuestros Productos</h4>
+                <a href="pages/productos.html">
+                    <img class="img-inicio ult-img" src="img/16pro.png" alt="iphone 16 pro">
+                    <button class="btn-mas">Ver Más</button>
+                </a>
+             </div>
+             <p>En 2025, nació un emprendimiento dedicado a la venta de iPhones, con la visión de ofrecer a los clientes una experiencia única al adquirir el dispositivo que ha revolucionado la comunicación y la tecnología. Con un enfoque en la calidad, el servicio al cliente y la disponibilidad de modelos de última generación, la empresa se ha posicionado rápidamente como un referente en el mercado de smartphones.</p>
         </main>
 
         <!-- pie de pagina -->
