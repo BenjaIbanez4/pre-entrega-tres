@@ -1,3 +1,6 @@
+//import de variables
+@import "variables";
+
 //mixin para cover
 @mixin cover ($url){
     background-image: $url;
@@ -8,7 +11,20 @@
     flex-direction: column;
     background-size: cover;
     background-position: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: $color-transparencia;
     background-blend-mode: darken;
-    color: whitesmoke;
+    color: $smoke;
+}
+
+@mixin cover-desktop($url){
+    background-image: $url;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-color: $color-transparencia;
+    background-blend-mode: darken;
+}
+
+@mixin btn-mas($margin){
+    margin: $margin;
 }

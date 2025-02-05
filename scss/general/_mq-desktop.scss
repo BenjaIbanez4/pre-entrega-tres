@@ -1,0 +1,74 @@
+
+//estilos para desktop
+@media screen and (min-width: 1024px){
+    .carrusel{
+        height: 50%;
+    }
+    .main-inicio{
+        height: 85vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 50%);
+        margin-bottom: 14rem;
+    }
+    main{
+        h1{
+            margin: 5rem;
+        }
+        .img-inicio{
+            display: none;
+        }
+        .img-uno{
+            @include cover-desktop (url(../img/reparacion-tres.png));
+        }
+        .img-dos{
+            @include cover-desktop (url(../img/contacto.png));
+            grid-row: span 2;
+        }
+        .img-tres{
+            @include cover-desktop (url(../img/16pro.png))
+        }
+        h4{
+            display: none;
+        }
+        .p-inicio{
+            width: 200%;
+            margin-top: 2rem;
+        }
+        .btn-mas{
+            @include btn-mas (20% 0 0 45%);
+        }
+        .btn-mas-dos{
+            @include btn-mas (40% 0 0 45%);
+        }
+        .pronto{
+            display: flex;
+            flex-direction: column;
+        }
+        .container{
+            display: flex;
+            width: 100vw;
+            height: 400px;
+        }
+        div{
+            .tarjeta{
+                display: flex;
+                flex-direction: column;
+                height: 380px;
+            }
+            .coming-soon{
+                width: 100%;
+                height: 14rem;
+                object-fit: cover;
+                margin-top: 100px;
+            }
+        }
+        .pronto{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    footer{
+        position:relative;
+    }
+}

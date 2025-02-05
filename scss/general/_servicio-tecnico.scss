@@ -1,0 +1,23 @@
+main{
+    div{
+        .cover{
+            @include cover(url(../img/reparacion-uno.png))
+        }
+
+        .img-rep{
+            margin: 1rem 0.5rem;
+            width: 15rem;
+            object-fit: cover;
+        }
+    }
+    .contenedor{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .subtitulo-serv{
+        text-align: center;
+        text-decoration: underline;
+        margin: 40px;
+    }
+}
