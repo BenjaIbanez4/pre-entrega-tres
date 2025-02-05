@@ -132,4 +132,23 @@ main .pronto {
   display: none;
 }
 
+main .titulo-about-us {
+  margin-top: 8rem;
+  text-align: center;
+  text-decoration: underline;
+}
+main div .about-us {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+main div .img-atencion {
+  display: none;
+}
+main div .img-rep {
+  margin: 1rem 0.5rem;
+  width: 15rem;
+  object-fit: cover;
+}
+
 /*# sourceMappingURL=main.css.map */

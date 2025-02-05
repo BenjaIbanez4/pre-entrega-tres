@@ -1,0 +1,14 @@
+main{
+    div{
+        .img-atencion{
+            display: none;
+        }
+    }
+    div{
+            .img-rep{
+                margin: 1rem 0.5rem;
+                width: 15rem;
+                object-fit: cover;
+            }
+    }
+}
