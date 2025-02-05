@@ -1,0 +1,14 @@
+//mixin para cover
+@mixin cover ($url){
+    background-image: $url;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    color: whitesmoke;
+}

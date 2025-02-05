@@ -1,0 +1,28 @@
+//import de variables
+@import "../utilidades/variables";
+
+//import de mixin
+@import "../utilidades/mixin";
+
+//import de footer
+@import "../general/footer";
+
+/* estilos generales */
+body{
+    background-color: $color-principal;
+}
+
+/* estilos de header */
+header{
+    font-size: 1.5rem;
+    margin-bottom: 98px;
+    .bg-color{
+        background-color: $color-header;
+    }
+    .logo{
+        width: 60%;
+    }
+    .header{
+        height: 50%;
+    }
+}

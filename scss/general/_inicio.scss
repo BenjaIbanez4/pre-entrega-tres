@@ -1,0 +1,45 @@
+//estilos para el index
+.cover{
+    @include cover (url(../img/tienda.png));
+}
+
+div{
+    h1{
+        text-align: center;
+        margin: 1.5rem;
+        text-decoration: underline;
+    }
+}
+
+.bienvenido{
+    text-align: center;
+    margin: 1rem;
+}
+
+/* estilos de main */
+main{
+    h4{
+        margin: 2rem 0 0 1rem;
+    }
+    div{
+            .img-inicio{
+                width: 70%;
+                max-height: 300px;
+                object-fit: cover;
+                margin: 1rem;
+            }
+            .btn-mas, .btn-mas-dos{
+                border-radius: 5px;
+                background-image: -webkit-linear-gradient(top, #6d6565, #2c2a2a);
+                color: $smoke;
+                padding: 5px;
+            }
+            .ult-img{
+                margin-bottom: 3rem;
+            }
+    }
+    .p-inicio{
+        text-align: center;
+    }
+}
+
